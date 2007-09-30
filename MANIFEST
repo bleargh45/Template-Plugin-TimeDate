@@ -4,6 +4,7 @@ Changes
 MANIFEST
 MANIFEST.SKIP
 META.yml
+README
 lib/Template/Plugin/TimeDate.pm
 t/timedate.t
 t/pod.t
