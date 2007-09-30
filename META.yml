@@ -10,6 +10,8 @@ resources:
 requires:
   Date::Parse: 0
   Template: 2
+build_requires:
+  Test::More: 0
 provides:
   Template::Plugin::TimeDate:
     file: lib/Template/Plugin/TimeDate.pm
