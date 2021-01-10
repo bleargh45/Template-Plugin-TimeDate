@@ -1,6 +1,8 @@
 Revision history for Perl extension Template::Plugin::TimeDate
 
 {{$NEXT}}
+
+1.03      2021-01-09 19:53:45-08:00 America/Vancouver
     - Switch to Dist::Zilla for release management
     - POD fixes; spelling
 
