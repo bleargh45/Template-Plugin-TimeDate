@@ -1,6 +1,6 @@
 # NAME
 
-Template::Plugin::TimeDate - TT plugin to parse/format dates using TimeDate
+Template::Plugin::TimeDate - Template::Toolkit plugin to parse/format dates using TimeDate
 
 # SYNOPSIS
 
@@ -30,16 +30,16 @@ Template::Plugin::TimeDate - TT plugin to parse/format dates using TimeDate
 
 # DESCRIPTION
 
-`Template::Plugin::TimeDate` is a TT plug-in that makes of the `Date::Parse`
-and `Date::Format` modules from the `TimeDate` distribution, to help deal
-with parsing/formatting dates.
+`Template::Plugin::TimeDate` is a `Template::Toolkit` plug-in that makes of
+the `Date::Parse` and `Date::Format` modules from the `TimeDate`
+distribution, to help deal with parsing/formatting dates.
 
-Why another date/time TT plug-in?  `Template::Plugin::Date` doesn't handle
-output in different timezones, and `Template::Plugin::DateTime` didn't give me
-a means of easily parsing dates before turning them into `DateTime` objects.
-I'd been using the `Date::Parse` module elsewhere to parse dates, and so this
-plug-in was built to help capture the parse/format cycle that I wanted to use in
-my templates.
+Why another date/time plug-in?  `Template::Plugin::Date` doesn't handle output
+in different timezones, and `Template::Plugin::DateTime` didn't give me a means
+of easily parsing dates before turning them into `DateTime` objects.  I'd been
+using the `Date::Parse` module elsewhere to parse dates, and so this plug-in
+was built to help capture the parse/format cycle that I wanted to use in my
+templates.
 
 The plug-in should be loaded via the USE directive:
 

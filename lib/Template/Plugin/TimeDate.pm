@@ -119,9 +119,11 @@ sub stringify {
 
 1;
 
+=for stopwords ISO8601
+
 =head1 NAME
 
-Template::Plugin::TimeDate - TT plugin to parse/format dates using TimeDate
+Template::Plugin::TimeDate - Template::Toolkit plugin to parse/format dates using TimeDate
 
 =head1 SYNOPSIS
 
@@ -149,16 +151,16 @@ Template::Plugin::TimeDate - TT plugin to parse/format dates using TimeDate
 
 =head1 DESCRIPTION
 
-C<Template::Plugin::TimeDate> is a TT plug-in that makes of the C<Date::Parse>
-and C<Date::Format> modules from the C<TimeDate> distribution, to help deal
-with parsing/formatting dates.
+C<Template::Plugin::TimeDate> is a C<Template::Toolkit> plug-in that makes of
+the C<Date::Parse> and C<Date::Format> modules from the C<TimeDate>
+distribution, to help deal with parsing/formatting dates.
 
-Why another date/time TT plug-in?  C<Template::Plugin::Date> doesn't handle
-output in different timezones, and C<Template::Plugin::DateTime> didn't give me
-a means of easily parsing dates before turning them into C<DateTime> objects.
-I'd been using the C<Date::Parse> module elsewhere to parse dates, and so this
-plug-in was built to help capture the parse/format cycle that I wanted to use in
-my templates.
+Why another date/time plug-in?  C<Template::Plugin::Date> doesn't handle output
+in different timezones, and C<Template::Plugin::DateTime> didn't give me a means
+of easily parsing dates before turning them into C<DateTime> objects.  I'd been
+using the C<Date::Parse> module elsewhere to parse dates, and so this plug-in
+was built to help capture the parse/format cycle that I wanted to use in my
+templates.
 
 The plug-in should be loaded via the USE directive:
 
