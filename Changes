@@ -2,6 +2,7 @@ Revision history for Perl extension Template::Plugin::TimeDate
 
 {{$NEXT}}
     - Bump minimum required Perl to 5.008
+    - Update test to use subtests
 
 1.03      2021-01-09 19:53:45-08:00 America/Vancouver
     - Switch to Dist::Zilla for release management
