@@ -1,8 +1,17 @@
 use strict;
 use warnings;
+use Test::More;
+use Test::MockTime qw(set_fixed_time);  # NEEDS to be loaded before T:P:TimeDate
+
 use Template;
 use Template::Plugin::TimeDate;
-use Test::More;
+
+###############################################################################
+# Set a fixed time, so "time stands still" while running the test.
+#
+# That way, we don't ever accidentally fail tests due to race conditions
+# between calls to "time()" during individual tests.
+set_fixed_time(CORE::time());
 
 ###############################################################################
 # Make sure that TT works.
@@ -46,6 +55,7 @@ subtest 'Get current time' => sub {
 subtest 'Get current epoch time' => sub {
     my $tt = Template->new( TRIM=>1 );
     my $epoch = time();
+
     my $template = qq{
 [%- USE TimeDate -%]
 [%- TimeDate.epoch -%]
